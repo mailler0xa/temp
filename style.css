@@ -1,0 +1,22 @@
+.login-image {
+	border-radius: 1.5em;
+
+}
+
+.test1 {
+	background-color: bisque;
+}
+
+.btn1 {
+	border: none;
+	outline: none;
+	color: white;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.btn1:hover {
+	background-color: white;
+	border: 1px solid;
+	color: black;
+}
