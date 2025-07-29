@@ -1,0 +1,27 @@
+id: aem-forms-detect
+
+info:
+  name: Favicon based AEM Detection
+  author: mailler0xa
+  severity: info
+  classification:
+    cpe: cpe:2.3:a:adobe:experience_manager:*:*:*:*:*:*:*:*
+  metadata:
+    max-request: 1
+    vendor: adobe
+    product: experience_manager
+    shodan-query: null
+  tags: aem,tech,adobe,aem-forms
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/lc/libs/livecycle/core/content/login.html"
+
+    host-redirects: true
+    max-redirects: 2
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "Forms"
