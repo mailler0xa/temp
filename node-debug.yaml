@@ -1,0 +1,27 @@
+id: nodejs-debug
+
+info:
+  name: Node.JS Debug mode enabled
+  author: mailler,r3dpower
+  severity: medium
+  metadata:
+    verified: true
+    max-requests: 1
+    vendor: OpenJS Foundation
+    shodan-query: "WebSockets request was expected"
+  tags: tech,nodejs
+
+http:
+  - method: GET
+    path: 
+      - "{{BaseURL}}"
+    
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "WebSockets request was expected"
+      - type: status
+        status:
+          - 400 
