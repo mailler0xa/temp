@@ -3,7 +3,7 @@ id: nodejs-debug
 info:
   name: Node.JS Debug mode enabled
   author: mailler,r3dpower
-  severity: medium
+  severity: info
   metadata:
     verified: true
     max-requests: 1
