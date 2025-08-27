@@ -22,6 +22,7 @@ http:
         part: body
         words:
           - "WebSockets request was expected"
+          - "Only Websocket request is accepted"
       - type: status
         status:
           - 400
