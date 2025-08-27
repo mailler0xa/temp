@@ -2,7 +2,7 @@ id: nodejs-debug
 
 info:
   name: Node.JS Debug mode enabled
-  author: mailler,r3dpower
+  author: mailler0xa,TheeEclipse,r3dpower
   severity: low
   metadata:
     verified: true
@@ -23,6 +23,3 @@ http:
         words:
           - "WebSockets request was expected"
           - "Only Websocket request is accepted"
-      - type: status
-        status:
-          - 400
