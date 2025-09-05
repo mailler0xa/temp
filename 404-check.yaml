@@ -23,3 +23,4 @@ http:
           - "\"error\":\"Not Found\""
           - "\"message\":"
           - "\"path\":"
+        condition: and
