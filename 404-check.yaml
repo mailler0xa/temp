@@ -1,0 +1,25 @@
+id: 404-json-check
+
+info:
+  name: check for json 404
+  author: mailler0xa
+  severity: info
+  metadata:
+    verified: true
+    max-requests: 1
+  tags: 404
+
+http:
+  - method: GET
+    path: 
+      - "{{BaseURL}}"
+    
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: body
+        words:
+          - "\"status\":404"
+          - "\"error\":\"Not Found\""
+          - "\"message\":"
+          - "\"path\":"
