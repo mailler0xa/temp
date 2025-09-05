@@ -12,7 +12,7 @@ info:
 http:
   - method: GET
     path:
-      - "{{BaseURL}}"
+      - "{{BaseURL}}/api/asdfqwerty"
 
     matchers-condition: and
     matchers:
